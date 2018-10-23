@@ -19,7 +19,7 @@ public class Folder {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @OneToMany(mappedBy = "file")
+    @OneToMany(mappedBy = "folder")
     private List<File> files;
 
     public Folder() {
